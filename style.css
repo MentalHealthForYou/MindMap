@@ -1,0 +1,367 @@
+#siteTitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color:  #a3d5ff;
+  text-align: center;
+  background: #ffffffcc;
+  padding: 20px 40px;
+  border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  display: inline-block;
+  margin: 20px auto;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #a3cef1;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #d9eefe;
+}
+
+.journal-box {
+  background: #ffffffdd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  margin-top: 10px;
+}
+
+#releaseBtn {
+  background: #ff7675;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+#releaseBtn:hover {
+  background: #e17055;
+}
+
+.fade-text {
+  font-style: italic;
+  margin-top: 20px;
+  color: #333;
+  opacity: 1;
+  animation: fadeAway 2.5s forwards;
+  display: none;
+}
+
+@keyframes fadeAway {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+
+.affirmation-box {
+  background: #fff2f2;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.2);
+  text-align: center;
+}
+
+#affirmationText {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #d6336c;
+  margin-bottom: 15px;
+  transition: opacity 0.4s ease;
+}
+
+#newAffirmationBtn {
+  background: #ffb6b9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#newAffirmationBtn:hover {
+  background: #ff8b94;
+}
+
+#moodTracker {
+  background: #e0f7fa;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 40px;
+}
+
+.mood-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.mood-btn {
+  font-size: 2rem;
+  padding: 10px;
+  background: #ffffff;
+  border: 2px solid #cceeff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mood-btn:hover {
+  transform: scale(1.1);
+  background-color: #d6f0ff;
+}
+
+textarea#moodNote {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#saveMood {
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#moodHistory {
+  margin-top: 20px;
+}
+
+#moodList {
+  list-style: none;
+  padding: 0;
+}
+
+#moodList li {
+  background: #fff;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.resource-section {
+  padding: 30px;
+  background-color: #f9fbff;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.resource-section h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.resource-category {
+  background: #e0f2fe;
+  padding: 20px;
+  border-left: 5px solid #3b82f6;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.resource-category h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.resource-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resource-category li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.resource-category a {
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resource-category a:hover {
+  text-decoration: underline;
+}
+
+.breathing-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e0f7ff;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.breathing-circle {
+  width: 120px;
+  height: 120px;
+  margin: 30px auto;
+  background-color: #93c5fd;
+  border-radius: 50%;
+  transition: all 4s ease-in-out;
+}
+
+.breathing-section button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.breathing-section button:hover {
+  background-color: #2563eb;
+}
+
+#breathing-instruction {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #1e3a8a;
+}
+
+.bubble-popper-section {
+  text-align: center;
+  background: #e0f7fa;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 600px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#bubble-form {
+  margin-bottom: 20px;
+}
+
+#bubble-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 60%;
+}
+
+#bubble-form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background: #38bdf8;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#bubble-container {
+  position: relative;
+  height: 300px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  background-color: #bae6fd;
+  border-radius: 50%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #1e3a8a;
+  animation: floatUp 8s linear infinite;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+@keyframes floatUp {
+  0% {
+    bottom: -60px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
+
+.bubble.pop {
+  animation: popEffect 0.4s forwards;
+}
+
+@keyframes popEffect {
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MindMap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindMap – Your Mental Health Toolkit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="siteTitle">MindMap</h1>
+    <p>Your personalized mental health toolkit</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#quiz">Self-Assessment</a>
+      <a href="#release">Unload</a>
+      <a href="#positive words">Positive Words</a>
+      <a href="#moodTracker">Mood Tracker</a>
+      <a href="#breathing">Breathing</a>
+      <a href="#games">Games</a>
+      <a href="#resources">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to MindMap</h2>
+      <p>This site is designed by teens, for teens. Whether you're feeling overwhelmed, anxious, or just need a break, we’ve got tools, games, and tips to help you find your calm and feel supported.</p>
+      <h2>Mind Matters</h2>
+      <p>Mental health isn’t just about feeling sad or stressed — it’s about how we think, feel, and handle life every day. For teens especially, taking care of mental health is crucial. 
+        
+        <p>According to the CDC, more than 1 in 3 high school students reported experiencing persistent feelings of sadness or hopelessness in 2021. Nearly 1 in 5 seriously considered suicide. These numbers aren’t just statistics — they’re a reminder that you’re not alone, and that your mental health matters just as much as your physical health. 
+
+<p>Understanding mental health is the first step toward breaking stigma, building coping skills, and finding support. This space is here to help you do just that.</p>
+    </section>
+  </main>
+<main>
+  <h1>MindMap Self-Assessment Quiz</h1>
+  <p>Rate each statement from 0 (Not at all) to 3 (Nearly every day).</p>
+
+  <section id="quiz">
+  <form id="quizForm">
+    <h2>🌀 Anxiety</h2>
+    <div class="question">
+      <label>1. I feel nervous or on edge.</label>
+      <select name="anxiety">
+        <option value="0">0 – Not at all</option>
+        <option value="1">1 – Several days</option>
+        <option value="2">2 – More than half the days</option>
+        <option value="3">3 – Nearly every day</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>2. I have trouble relaxing.</label>
+      <select name="anxiety">
+        <option value="0">0</option><option value="1">1</option>
+        <option value="2">2</option><option value="3">3</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>3. I feel like something bad might happen.</label>
+      <select name="anxiety">
+        <option value="0">0</option><option value="1">1</option>
+        <option value="2">2</option><option value="3">3</option>
+      </select>
+    </div>
+
+    <h2>🌧️ Depression</h2>
+    <div class="question">
+      <label>4. I feel hopeless or down most of the day.</label>
+      <select name="depression">
+        <option value="0">0</option><option value="1">1</option>
+        <option value="2">2</option><option value="3">3</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>5. I no longer enjoy things I used to like.</label>
+      <select name="depression">
+        <option value="0">0</option><option value="1">1</option>
+        <option value="2">2</option><option value="3">3</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>6. I feel tired or have low energy.</label>
+      <select name="depression">
+        <option value="0">0</option><option value="1">1</option>
+        <option value="2">2</option><option value="3">3</option>
+      </select>
+    </div>
+
+    <h2>🔥 Burnout</h2>
+    <div class="question">
+      <label>7. I feel emotionally drained after daily activities.</label>
+      <select name="burnout">
+        <option value="0">0</option><option value="1">1</option>
+        <option value="2">2</option><option value="3">3</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>8. I struggle to motivate myself for basic tasks.</label>
+      <select name="burnout">
+        <option value="0">0</option><option value="1">1</option>
+        <option value="2">2</option><option value="3">3</option>
+      </select>
+    </div>
+
+    <button type="submit">Get My Results</button>
+  </form>
+
+  <div id="results" class="results-box"></div>
+</main>
+ 
+<section id="release">
+<section class="journal-box">
+  <h2>📝 Write & Release</h2>
+  <p>Let your thoughts out. When you're ready, release them.</p>
+  <textarea id="journalInput" placeholder="Type anything you're feeling..."></textarea>
+  <button id="releaseBtn">🕊️ Release</button>
+  <div id="releaseAnimation" class="fade-text"></div>
+</section>
+
+<section id="positive words">
+<section class="affirmation-box">
+  <h2>💬 Positive Affirmations</h2>
+  <p id="affirmationText">Click below to receive an affirmation 🌟</p>
+  <button id="newAffirmationBtn">💖 New Affirmation</button>
+</section>
+
+<section id="moodTracker">
+  <h2>🌤️ How Are You Feeling Today?</h2>
+  <div class="mood-options">
+    <button class="mood-btn" data-mood="😊">😊</button>
+    <button class="mood-btn" data-mood="😔">😔</button>
+    <button class="mood-btn" data-mood="😠">😠</button>
+    <button class="mood-btn" data-mood="😰">😰</button>
+    <button class="mood-btn" data-mood="😴">😴</button>
+    <button class="mood-btn" data-mood="😄">😄</button>
+  </div>
+  <textarea id="moodNote" placeholder="Optional: Write how you're feeling..." rows="3"></textarea>
+  <button id="saveMood">📘 Save Mood</button>
+  <div id="moodHistory">
+    <canvas id="moodChart" width="400" height="200"></canvas>
+    <h3>🗓️ Mood History</h3>
+    <ul id="moodList"></ul>
+  </div>
+</section>
+  
+  <section id="breathing">
+  <div id="breathing-tool" class="breathing-section">
+  <h2>🌬️ Guided Breathing</h2>
+  <p>Follow the circle. Inhale… hold… exhale.</p>
+  <div class="breathing-circle"></div>
+  <p id="breathing-instruction">Get ready…</p>
+  <button onclick="startBreathing()">Start Breathing</button>
+</div>
+  
+    <section id="games">
+  <div id="bubble-popper" class="bubble-popper-section">
+  <h2>🫧 Stress Bubble Popper</h2>
+  <p>Tap a bubble to pop your stress away!</p>
+
+  <form id="bubble-form">
+    <input type="text" id="bubble-input" placeholder="Add a stress to pop..." />
+    <button type="submit">Add Bubble</button>
+  </form>
+
+  <div id="bubble-container"></div>
+
+  <p id="bubble-message" style="display:none;">Nice job! You've popped all your stress bubbles! 🌈</p>
+
+  <!-- Sound Effect -->
+  <audio id="pop-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_f66172681b.mp3?filename=pop-94319.mp3" preload="auto"></audio>
+</div>
+ 
+  <section id="resources">
+  <div id="resource-hub" class="resource-section">
+  <h2>Mental Health Resource Hub 🧠</h2>
+
+  <div class="resource-category">
+    <h3>🆘 Crisis Lines</h3>
+    <ul>
+      <li><strong>988 Suicide & Crisis Lifeline</strong> – Dial 988 or visit <a href="https://988lifeline.org" target="_blank">988lifeline.org</a></li>
+      <li><strong>Crisis Text Line</strong> – Text HOME to 741741 or visit <a href="https://www.crisistextline.org/" target="_blank">crisistextline.org</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-category">
+    <h3>📱 Helpful Apps</h3>
+    <ul>
+      <li><strong>Calm</strong> – Meditation, sleep, and focus. <a href="https://www.calm.com" target="_blank">calm.com</a></li>
+      <li><strong>Woebot</strong> – Friendly AI for moods + CBT. <a href="https://woebothealth.com" target="_blank">woebothealth.com</a></li>
+      <li><strong>Sanvello</strong> – Tools for anxiety + depression. <a href="https://www.sanvello.com/" target="_blank">sanvello.com</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-category">
+    <h3>🌐 Online Therapy</h3>
+    <ul>
+      <li><strong>BetterHelp</strong> – Online counseling. <a href="https://www.betterhelp.com" target="_blank">betterhelp.com</a></li>
+      <li><strong>Teen Counseling</strong> – For ages 13–19. <a href="https://www.teencounseling.com" target="_blank">teencounseling.com</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-category">
+    <h3>🎓 Teen-Specific Tools</h3>
+    <ul>
+      <li><strong>The Jed Foundation</strong> – Student mental health. <a href="https://www.jedfoundation.org" target="_blank">jedfoundation.org</a></li>
+      <li><strong>Love Is Respect</strong> – Healthy relationships. <a href="https://www.loveisrespect.org" target="_blank">loveisrespect.org</a></li>
+    </ul>
+  </div>
+
+  <div class="resource-category">
+    <h3>📖 Learn About...</h3>
+    <ul>
+      <li><a href="https://www.nimh.nih.gov/health/topics/anxiety-disorders" target="_blank">Anxiety – NIH</a></li>
+      <li><a href="https://www.mind.org.uk/information-support/types-of-mental-health-problems/depression/" target="_blank">Depression – Mind UK</a></li>
+      <li><a href="https://www.headspace.com/stress" target="_blank">Stress & Burnout – Headspace</a></li>
+    </ul>
+  </div>
+</div>
+
+  
+  <footer>
+    <p>© 2025 MindMap | Created with care</p>
+  </footer>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/chart.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
